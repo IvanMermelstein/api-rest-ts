@@ -1,7 +1,7 @@
 module.exports = {
   'env': {
     'browser': true,
-    'es2021': true
+    'es2021': true 
   },
   'extends': [
     'eslint:recommended',
@@ -12,7 +12,7 @@ module.exports = {
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
     'ecmaVersion': 'latest',
-    'sourceType': 'module'
+    'sourceType': 'module' 
   },
   'plugins': [
     '@typescript-eslint'
@@ -38,5 +38,14 @@ module.exports = {
       'error',
       'always'
     ],
-  }
+    'object-curly-newline': ['error', { 'minProperties': 2 }],
+    'object-property-newline': [
+      'error',
+      { 'allowAllPropertiesOnSameLine': false }
+    ],
+    'comma-spacing': ['error', {
+      'before': false,
+      'after': true 
+    }],
+  } 
 };
